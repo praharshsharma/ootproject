@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      html,
+      body,
+      .wrapper {
+        height: 100%;
+      }
+      
+      @keyframes gradient {
+        100% {
+          background-size: 4000px 1000px;
+        }
+      }
+      
+      body {
+        display: grid;
+        place-items: center;
+        margin: 0;
+        padding: 0 24px;
+        background-size: 2000px 1000px;
+        background-position: -500px 0;
+        color: #f9f9f9;
+        font-family: "Euclid Circular A";
+        animation: gradient 10s infinite alternate linear;
+      }
+      
+      @media (width >= 500px) {
+        body {
+          padding: 0;
+        }
+      }
+    
+      @keyframes gradient {
+        100% {
+          background-size: 4000px 1000px;
+        }
+      }
+      
+    .login {
+        position: fixed;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        width: 50%;
+        padding: 70px 30px 44px;
+        border-radius: 22px;
+        background: #062e65;
+        text-align: center;
+        height: 50%;
+    
+    }
+    
+      @media (width >= 450px) {
+        .login {
+          width: 25%;
+          height: 50%;
+        }
+      }
+      
+      .login > h2 {
+        color: rgba(255, 255, 255, 0.38);
+        margin: 0 0 30px;
+        font-weight: 500;
+        font-size: 16px;
+      }
+      
+      #login2 {
+        position: absolute;
+        top: 50%;
+        height: 100px;
+        margin-top: -50px;
+      }
+      
+      .login-form {
+        display: grid;
+        gap: 16px;
+        place-items: center;
+        width: 100%;
+        margin: 0;
+      }
+      
+      .login-form button {
+        width: 100%;
+        height: 60px;
+        outline: none;
+        padding: 0;
+        font-family: inherit;
+        font-size: 16px;
+        border-radius: 8px;
+      }
+    
+      .login-form button {
+        cursor: pointer;
+        background: #157ae1;
+        color: #f9f9f9;
+        border: 0;
+        font-weight: 600;
+        letter-spacing: 2px;
+        height: 5%;
+        width: 10%;
+      }
+    
+      #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+      }
+    
+      a:link {
+        color: rgb(246, 246, 246);
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      body {
+        background-image: url("http://localhost:5001/bgimg1.png");
+      }
+
+      .logo{
+        position: absolute;
+        opacity: 1;
+        top:30px;
+      }
+
+      .btn{
+       border-radius: 15px;
+       padding: 10px;
+       font-size: 20px;
+      }
+
+      .btn:hover{
+        background-color: greenyellow;
+        cursor: pointer;
+      }
+      
+    
+    /* .custom-control-label{
+    
+    } */
+    </style>
+  </head>
+  <body>
+   
+    <!-- <img src="bgimg1.png" id="myVideo"> -->
+
+    <img src="http://localhost:5001/signinlogo.png" alt="" height="150px" class="logo">
+
+
+    <div class="login">
+      <form action="" method="post" class="form" id="login">
+        <label>First name:</label><br />
+        <input type="text" id="fname" name="fname" /><br /><br>
+        <label>Last name:</label><br />
+        <input type="text" id="lname" name="lname" /><br /><br>
+        <label>Phone Number:</label><br />
+        <input type="text" id="mnumber" name="mnumber" /><br /><br>
+        <label>Password:</label><br />
+        <input type="password" id="password" name="password" /><br /><br>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

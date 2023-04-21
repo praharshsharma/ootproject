@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="spslogo.png" type="image/x-icon">
+  <title>SPS</title>
+  <style>
+    /* //@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap'); */
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+    body {
+      background-image: url("unknown2.jpg");
+      background-size: 1550px;
+      background-position-y: -150px;
+      background-repeat: no-repeat;
+      color: rgb(255, 6, 6);
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      text-align: right;
+      min-height: 90vh;
+      display: flex;
+    }
+
+
+    .fill {
+      appearance: none;
+      
+      background-color: transparent;
+      border: 2px solid #066303;
+      border-radius: 15px;
+      box-sizing: border-box;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0;
+      min-height: 60px;
+      min-width: 0;
+      outline: none;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: 100%;
+      will-change: transform;
+    }
+
+    .fill:disabled {
+      pointer-events: none;
+    }
+
+    .fill:hover {
+      color: white;
+      background-color: black;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-2px);
+    }
+
+    .fill:active {
+      box-shadow: none;
+      transform: translateY(0);
+    }
+
+    .logout{
+      font-family: 'Dancing Script';
+      font-size: 30px;
+      width: 30%;
+    }
+
+    .logout:hover{
+      background-color: red;
+      color: black;
+    }
+
+    .logo{
+      position: absolute;
+      top: 0;
+      left: 100px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <img src = "spsootlogoRMBG.png" height="150px" class="logo">
+  <div class="buttons" ;>
+
+    <h1 style="font-family: 'Lobster', cursive;color:white;font-weight: bolder;font-size: 350%;">CHOOSE TYPE OF ANALYSIS
+    </h1>
+    <a href="overallanalysis.html" target="_blank"><button id="submit"
+        style="font-size: 50px;font-family: 'Dancing Script', cursive;" class="fill">
+        Overall Country Analysis
+      </button></a>
+    <br><br>
+    <a href="statewise.html" target="_blank"><button id="submit"
+        style="font-size: 50px;font-family: 'Dancing Script', cursive;" class="fill">
+        Statewise Comparison
+      </button></a>
+  
+<br><br>
+  <form action="" method="post">
+    <center>
+    <button class="fill , logout">Logout</button>
+  </center>
+</form>
+</div>
+</body>
+
+</html>

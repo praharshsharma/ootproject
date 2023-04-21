@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="login.css" />
+    <title>Document</title>
+    <style>
+      .logo{
+        position: absolute;
+        opacity: 1;
+        top:30px;
+      }
+
+      .btn{
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 20px;
+       }
+ 
+       .btn:hover{
+         background-color: greenyellow;
+         cursor: pointer;
+       }
+    </style>
+  </head>
+
+  <body id="body">
+    <video autoplay muted loop id="myVideo">
+      <source src="3.mkv" type="video/mp4" />
+    </video>
+    <img src="signinlogo.png" alt="" height="150px" class="logo">
+    <div class="login">
+      <form method="post" action="/signup" class="form" id="login">
+        <div class="login2">
+          <h2>SignUp</h2>
+          <label for="fname">Email:</label><br /><br />
+          <input type="text" id="email" name="email" /><br /><br />
+          <button id="submit" class="btn">SUBMIT</button>
+        </div>
+        <div id="text"></div>
+      </form>
+      <br />
+      <a href="./signin">Signin</a>
+    </div>
+  </body>
+  <script src="./signup.js"></script>
+</html>

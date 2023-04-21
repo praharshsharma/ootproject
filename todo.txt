@@ -1,0 +1,7 @@
+make chat app
+1 schema
+2 display on home;
+
+form validations
+
+add css to project
